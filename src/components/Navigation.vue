@@ -1,20 +1,25 @@
 <template>
   <v-app>
-    <v-toolbar app>
-      <v-app-bar-nav-icon @click="showNav = !showNav"></v-app-bar-nav-icon>
+    <v-toolbar>
+      <v-app-bar-nav-icon class="hidden-md-and-up" @click="showNav = !showNav"></v-app-bar-nav-icon>
+      <v-spacer class="hidden-md-and-up"></v-spacer>
       <v-toolbar-title>MazeDesignLab</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items>
+      <v-spacer class="hidden-sm-and-down"></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
         <v-btn v-for="(nav, index) in navigation" :key="index" text>{{nav.title}}</v-btn>
       </v-toolbar-items>
       <v-navigation-drawer absolute temporary app v-model="showNav">
         <v-list dense>
+          <v-list-title class="title text-center">
+            <h4 class="my-4">MazedesignLabs</h4>
+          </v-list-title>
+          <v-divider></v-divider>
           <v-list-item v-for="(nav, index) in navigation" :key="index">
-            <v-list-item-icon>
+            <!-- <v-list-item-icon>
               <v-icon>{{nav.icon}}</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              {{nav.title}}
+            </v-list-item-icon> -->
+            <v-list-item-content class="text-center">
+              <p>{{nav.title}}</p>
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -31,7 +36,7 @@ export default {
     return {
       showNav: false,
       navigation: [
-        {icon: '', title: 'ABOUT US',},
+        {icon: 'mdi-spotlight', title: 'ABOUT US',},
         {icon: '', title: 'MISSION & VISSION',},
         {icon: '', title: 'OUR SERVICES',},
         {icon: '', title: 'PARTNERS',},
