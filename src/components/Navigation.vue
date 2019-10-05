@@ -35,12 +35,12 @@ export default {
     return {
       showNav: false,
       navigation: [
-        {icon: 'mdi-spotlight', title: 'ABOUT US',},
-        {icon: '', title: 'MISSION & VISSION',},
-        {icon: '', title: 'OUR SERVICES',},
-        {icon: '', title: 'PARTNERS',},
-      ]
-    }
-  }
-}
+        { icon: 'mdi-spotlight', title: 'ABOUT US' },
+        { icon: '', title: 'MISSION & VISSION' },
+        { icon: '', title: 'OUR SERVICES' },
+        { icon: '', title: 'PARTNERS' },
+      ],
+    };
+  },
+};
 </script>

@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <Navigation/>
+    <About/>
     <Mission/>
     <Services/>
     <Partners/>
@@ -15,11 +16,12 @@ import Mission from './components/Mission';
 import Partners from './components/Partners';
 import Services from './components/Services';
 import Footers from './components/Footers';
+import About from './components/About';
 
 export default {
   name: 'App',
   components: {
-    Navigation, Mission, Partners, Services, Footers,
+    Navigation, About, Mission, Partners, Services, Footers,
   },
   data: () => ({
     //
