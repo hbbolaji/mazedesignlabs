@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-layout row align-center class="my-4 px-8">
       <v-flex xs12 md6 lg6 xl6 class="pr-4">
         <div>

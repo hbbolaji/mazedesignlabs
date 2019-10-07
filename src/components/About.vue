@@ -1,8 +1,8 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-layout row align-center class="my-4 py-8">
       <v-flex xs12 md6 lg6 xl6 class="pr-4">
-        <v-img aapp max-height="300" src="../assets/us.png" aspect-ratio="1"></v-img>
+        <v-img app max-height="300" src="../assets/us.png" aspect-ratio="1"></v-img>
       </v-flex>
       <v-flex xs12 md6 class="pl-4">
         <div>

@@ -1,9 +1,9 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-layout row wrap align-center class="mx-auto">
       <v-flex>
         <v-col>
-          <h1 class="title teal--text">Maze Design Labs</h1>
+          <h1 class="title teal--text darken-4">Maze Design Labs</h1>
           <v-list>
             <v-list-item>
               <v-list-item-content>
