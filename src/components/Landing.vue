@@ -1,3 +1,3 @@
 <template>
-  <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" class="mt-n8"></v-parallax>
+  <v-parallax app src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" class="" height="600"></v-parallax>
 </template>
