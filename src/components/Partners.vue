@@ -5,8 +5,9 @@
       <v-sheet color="teal" height="100%" class="py-16">
         <v-col class="fill-height" align="center" justify="center" >
           <div class="display-3 white--text text-center mb-20">{{ partner.title }}</div>
-          <v-img class="mb-20" :src="partners[index].img" max-height="250" max-width="250"></v-img>
-          <div class="title white--text text-centers px-4 body-1">{{partner.content}}</div>
+          <v-img class="mb-20" :lazy-src="partner.img" :src="partner.img" max-height="250" max-width="250"></v-img>
+          <div class="title white--text text-centers px-8 body-1">{{partner.content}}</div>
+          <p>{{partner.img}}</p>
         </v-col>
       </v-sheet>
     </v-carousel-item>

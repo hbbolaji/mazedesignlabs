@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Navigation/>
-    <!-- <Landing/> -->
+    <Landing/>
     <About/>
     <Mission/>
     <Services/>

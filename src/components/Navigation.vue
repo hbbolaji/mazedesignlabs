@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar app color="teal" dark>
+    <v-app-bar dense fixed app color="teal" dark>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="showNav = !showNav"></v-app-bar-nav-icon>
       <v-spacer class="hidden-md-and-up"></v-spacer>
       <v-toolbar-title>MazeDesignLab</v-toolbar-title>
@@ -8,7 +8,7 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn v-for="(nav, index) in navigation" :key="index" text>{{nav.title}}</v-btn>
       </v-toolbar-items>
-    </v-toolbar>
+    </v-app-bar>
     <v-navigation-drawer z-index=0 color="teal" fixed temporary app v-model="showNav">
       <v-list dense>
         <v-list-title class="title text-center">
