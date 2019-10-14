@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar app fixed color="teal" dark>
+    <v-toolbar app color="teal" dark>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="showNav = !showNav"></v-app-bar-nav-icon>
       <v-spacer class="hidden-md-and-up"></v-spacer>
       <v-toolbar-title>MazeDesignLab</v-toolbar-title>
@@ -9,10 +9,10 @@
         <v-btn v-for="(nav, index) in navigation" :key="index" text>{{nav.title}}</v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <v-navigation-drawer color="teal" fixed temporary app v-model="showNav">
+    <v-navigation-drawer z-index=0 color="teal" fixed temporary app v-model="showNav">
       <v-list dense>
         <v-list-title class="title text-center">
-          <h4 class="my-4">MazedesignLabs</h4>
+          <h4 class="my-4 text-white">MazedesignLabs</h4>
         </v-list-title>
         <v-divider></v-divider>
         <v-list-item v-for="(nav, index) in navigation" :key="index">
@@ -20,7 +20,7 @@
             <v-icon>{{nav.icon}}</v-icon>
           </v-list-item-icon> -->
           <v-list-item-content class="text-center">
-            <p>{{nav.title}}</p>
+            <p class="text-white">{{nav.title}}</p>
           </v-list-item-content>
         </v-list-item>
       </v-list>

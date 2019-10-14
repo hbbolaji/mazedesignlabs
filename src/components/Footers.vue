@@ -1,57 +1,26 @@
 <template>
-  <v-container fluid>
-    <v-layout row wrap align-center class="mx-auto">
-      <v-flex>
-        <v-col>
-          <h1 class="title teal--text darken-4">Maze Design Labs</h1>
-          <v-list>
-            <v-list-item>
-              <v-list-item-content>
-                <v-list-item-title class="mb-n4 teal--text">
-                  About Us
-                </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-content>
-                <v-list-item-title class="mb-n4 teal--text">
-                  Mission and Vision
-                </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-content>
-                <v-list-item-title class="mb-n4 teal--text">Our Services</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-content>
-                <v-list-item-title class="mb-n4 teal--text">Our Partner</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-col>
-      </v-flex>
-      <v-flex>
-        <div>
-          <h1 class="teal--text text-center title">Social Media</h1>
-          <v-list>
-            <v-list-item v-for="(social, index) in socials" :key="index" class="mb-n4">
-              <v-list-item-icon>
-                <v-icon color="teal">{{social.icon}}</v-icon>
-              </v-list-item-icon>
-              <v-list-item-content>
-                <v-list-item-title class="teal--text">{{social.content}}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
+  <v-container fluid class="px-8">
+    <h1 class="display-2 teal--text my-4 darken-3 text-center">How Can we Help You</h1>
+    <h1 class="display-2 teal--text my-4 darken-3 text-center">Get to Know Us More &amp; Hire Us</h1>
+    <v-layout row wrap>
+      <v-flex xs12 md6>
+        <div class="mx-auto py-8">
+          <h1 class="text-center teal--text my-8">MEDIA</h1>
+          <v-button-navigation>
+            <v-btn xs12 text v-for="(nav, index) in navigation" :key="index">
+              <span class="teal--text darken-3 text-center" >{{nav.title}}</span>
+             </v-btn>
+          </v-button-navigation>
         </div>
       </v-flex>
-      <v-flex>
-        <div>
-          <h1 class="teal--text title">Contact Us</h1>
-          <v-text-field v-model="label" label="Email"></v-text-field>
-          <v-textarea autocomplete="" label="Message"></v-textarea>
+      <v-flex xs12 md6>
+        <div class="mx-auto py-8">
+          <h1 class="text-center teal--text my-8">SOCIAL</h1>
+          <v-botton-navigation>
+            <v-btn class="mx-2" fab color="teal" dark small v-for="(social, index) in socials" :key="index">
+              <v-icon>{{social.icon}}</v-icon>
+            </v-btn>
+          </v-botton-navigation>
         </div>
       </v-flex>
     </v-layout>
@@ -69,7 +38,13 @@ export default {
         { icon: 'mdi-facebook-box', content: 'Facebook' },
         { icon: 'mdi-twitter-box', content: 'Twitter' },
         { icon: 'mdi-linkedin-box', content: 'Linkedin' },
-      ]
+      ],
+      navigation: [
+        { icon: 'mdi-spotlight', title: 'ABOUT US' },
+        { icon: '', title: 'MISSION & VISSION' },
+        { icon: '', title: 'OUR SERVICES' },
+        { icon: '', title: 'PARTNERS' },
+      ],
     };
   },
 };

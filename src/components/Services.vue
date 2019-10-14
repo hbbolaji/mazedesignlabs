@@ -1,13 +1,13 @@
 <template>
   <v-container>
-    <v-layout row wrap justify-center>
+    <v-layout row wrap justify-center class="px-8">
       <v-flex justify-center xs12 sm6 md4 lg4 xl4 v-for="(service, index) in services" :key="index" class="text-center">
-        <div>
+        <div class="pt-12">
           <v-avatar color="teal lighten-5" size="150" class="text-center mb-4">
             <v-icon x-large color="teal">{{service.icon}}</v-icon>
           </v-avatar>
           <h2 class="headline mb-4 text-xs-center">{{service.title}}</h2>
-          <p class="px-2">{{service.content}}</p>
+          <p class="px-8 subtitle-1 pb-12">{{service.content}}</p>
         </div>
       </v-flex>
     </v-layout>
@@ -34,7 +34,6 @@ export default {
 
 <style scoped>
   p {
-    line-height: 2rem;
-    text-align: center;
+    text-align: justify;
   }
 </style>
