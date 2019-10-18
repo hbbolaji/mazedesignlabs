@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="home">
       <vue-particles
         color="#009688"
         :particleOpacity="0.5"
@@ -18,11 +18,10 @@
         clickMode="push"
         class="landing"
       >
-        <h1 class="text-auto teal--text display-3 my-20">MazeDesignLab</h1>
       </vue-particles>
     </div>
- </template>
- 
+</template>
+
 <style scoped>
   .landing {
     height: 100vh;

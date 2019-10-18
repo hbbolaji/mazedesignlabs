@@ -1,13 +1,17 @@
 <template>
-  <v-container fluid>
-    <v-carousel cycle height="600" hide-delimiter-background show-arrows-on-hover delimiter-icon="mdi-checkbox-blank-outline">
+  <v-container fluid id="partners">
+    <v-carousel
+      cycle
+      height="600"
+      hide-delimiter-background
+      show-arrows-on-hover
+      delimiter-icon="mdi-checkbox-blank-outline">
     <v-carousel-item v-for="(partner, index) in partners" :key="index" class="">
       <v-sheet color="teal" height="100%" class="py-16">
         <v-col class="fill-height" align="center" justify="center" >
           <div class="display-3 white--text text-center mb-20">{{ partner.title }}</div>
-          <v-img class="mb-20" :lazy-src="partner.img" :src="partner.img" max-height="250" max-width="250"></v-img>
+          <v-img class="mb-20" src=""></v-img>
           <div class="title white--text text-centers px-8 body-1">{{partner.content}}</div>
-          <p>{{partner.img}}</p>
         </v-col>
       </v-sheet>
     </v-carousel-item>

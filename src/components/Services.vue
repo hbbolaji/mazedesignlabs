@@ -1,7 +1,12 @@
 <template>
-  <v-container>
+  <v-container id="services">
     <v-layout row wrap justify-center class="px-8">
-      <v-flex justify-center xs12 sm6 md4 lg4 xl4 v-for="(service, index) in services" :key="index" class="text-center">
+      <v-flex
+        justify-center
+        xs12 sm6 md4 lg4 xl4
+        v-for="(service, index) in services"
+        :key="index"
+        class="text-center">
         <div class="pt-12">
           <v-avatar color="teal lighten-5" size="150" class="text-center mb-4">
             <v-icon x-large color="teal">{{service.icon}}</v-icon>
